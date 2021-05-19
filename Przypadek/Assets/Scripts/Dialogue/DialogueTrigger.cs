@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
+using System.Timers;
 
 public class DialogueTrigger : MonoBehaviour
 {
+
     public Dialogue dialogue;
     private GameObject triggeringNpc;
     private bool triggering;
@@ -11,12 +14,15 @@ public class DialogueTrigger : MonoBehaviour
 
     void Update()
     {
+
         if (stoppedTriggering){
             DialogueManager.Instance.EndDialogue();
             stoppedTriggering=false;
         }
 
-        if (DialogueManager.Instance.started && Input.GetButtonDown("NextSentence")){
+
+        if (DialogueManager.Instance.started && Input.GetButtonDown("NextSentence"))
+        {
             DialogueManager.Instance.DisplayNextSentence();
         }
 
@@ -26,6 +32,7 @@ public class DialogueTrigger : MonoBehaviour
         }
 
     }
+
 
     void OnTriggerEnter2D(Collider2D other){
         

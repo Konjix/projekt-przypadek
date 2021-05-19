@@ -8,6 +8,10 @@ public class DialogueManager : Singleton<DialogueManager>
     protected DialogueManager(){}
 
     public bool started;
+    public int isReady = 0;
+
+    private int waitTime = 100;
+
 
     public Text nameText;
     public Text dialogueText;
@@ -15,6 +19,11 @@ public class DialogueManager : Singleton<DialogueManager>
     public Animator animator;
     
     private Queue<string> sentences=new Queue<string>();
+
+    void Update()
+    {
+        isReady++;
+    }
 
     void Start()
     {
@@ -24,6 +33,7 @@ public class DialogueManager : Singleton<DialogueManager>
     public void StartDialogue(Dialogue dialogue){
         animator.SetBool("IsOpen",true);
         started=true;
+        isReady = 0;
         Debug.Log("Starting conversation with "+ dialogue.name);
 
         nameText.text = dialogue.name;
@@ -39,17 +49,20 @@ public class DialogueManager : Singleton<DialogueManager>
     }
 
    public void DisplayNextSentence(){
+        if (isReady >= 0)
+        {
+            isReady = -waitTime;
+            if (sentences.Count == 0)
+            {
+                EndDialogue();
+                return;
+            }
+            string sentence = sentences.Dequeue();
+            dialogueText.text = sentence;
+            Debug.Log(sentence);
+        }
 
-       StartCoroutine(takeTime());
-       if (sentences.Count == 0){
-           EndDialogue();
-           return;
-       }
-       string sentence = sentences.Dequeue();
-       dialogueText.text = sentence;
-       Debug.Log(sentence);
-       
-   }
+    }
 
    public void EndDialogue(){
        Debug.Log("End of conversation");
@@ -57,8 +70,6 @@ public class DialogueManager : Singleton<DialogueManager>
        started = false;
    } 
 
-   IEnumerator takeTime(){
-       yield return new WaitForSeconds(5);
-   }
+
 
 }

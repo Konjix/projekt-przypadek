@@ -19,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
         Vector2 currentVelocity = gameObject.GetComponent<Rigidbody2D>().velocity;
 
         float newVelocityX = 0f;
+        float newVelocityY = 0f;
 
         if (moveHorizontal < 0 && currentVelocity.x <= 0)
         {
@@ -36,17 +37,47 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("walkingRight", false);
         }
 
-        float newVelocityY = 0f;
 
         if (moveVertical < 0 && currentVelocity.y <= 0)
         {
-            newVelocityY = -speed;
-            animator.SetBool("walkingDown", true);
+            if (moveHorizontal < 0 && currentVelocity.x <= 0)
+            {
+                newVelocityY = (float)(-speed / 1.41);
+                newVelocityX = (float)(-speed / 1.41);
+                animator.SetBool("walkingDown", true);
+            }
+            else if (moveHorizontal > 0 && currentVelocity.x >= 0)
+            {
+                newVelocityY = (float)(-speed / 1.41);
+                newVelocityX = (float)(speed / 1.41);
+                animator.SetBool("walkingDown", true);
+            }
+            else
+            {
+                newVelocityY = -speed;
+                animator.SetBool("walkingDown", true);
+
+            }
         }
         else if (moveVertical > 0 && currentVelocity.y >= 0)
         {
-            newVelocityY = speed;
-            animator.SetBool("walkingUp", true);
+            if (moveHorizontal < 0 && currentVelocity.x <= 0)
+            {
+                newVelocityY = (float)(speed / 1.4);
+                newVelocityX = (float)(-speed / 1.4);
+                animator.SetBool("walkingUp", true);
+            }
+            else if (moveHorizontal > 0 && currentVelocity.x >= 0)
+            {
+                newVelocityY = (float)(speed / 1.4);
+                newVelocityX = (float)(speed / 1.4);
+                animator.SetBool("walkingUp", true);
+            }
+            else
+            {
+                newVelocityY = speed;
+                animator.SetBool("walkingUp", true);
+            }
         }
         else
         {
