@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: DemoTilesetAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: adfb39f12a648d445932d36f16a0e1b8, type: 3}
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 8972862315078433919, guid: adfb39f12a648d445932d36f16a0e1b8, type: 3}
+  - {fileID: 1637861702812600700, guid: adfb39f12a648d445932d36f16a0e1b8, type: 3}
+  - {fileID: 2345667958763532259, guid: adfb39f12a648d445932d36f16a0e1b8, type: 3}
+  - {fileID: -6345726902230529833, guid: adfb39f12a648d445932d36f16a0e1b8, type: 3}
+  - {fileID: 8583140604290781664, guid: adfb39f12a648d445932d36f16a0e1b8, type: 3}
+  - {fileID: -703785039881595821, guid: adfb39f12a648d445932d36f16a0e1b8, type: 3}
+  - {fileID: 6470291941343803202, guid: adfb39f12a648d445932d36f16a0e1b8, type: 3}
+  - {fileID: 1675052422735460632, guid: adfb39f12a648d445932d36f16a0e1b8, type: 3}
+  - {fileID: -7485132836843931510, guid: adfb39f12a648d445932d36f16a0e1b8, type: 3}
+  - {fileID: -8573290416816858907, guid: adfb39f12a648d445932d36f16a0e1b8, type: 3}
+  - {fileID: -4333445143669045115, guid: adfb39f12a648d445932d36f16a0e1b8, type: 3}
+  - {fileID: -8629609890337248420, guid: adfb39f12a648d445932d36f16a0e1b8, type: 3}
+  - {fileID: 4769501151356071562, guid: adfb39f12a648d445932d36f16a0e1b8, type: 3}
+  - {fileID: -6141764297335943677, guid: adfb39f12a648d445932d36f16a0e1b8, type: 3}
+  - {fileID: 1899491715260785033, guid: adfb39f12a648d445932d36f16a0e1b8, type: 3}
+  - {fileID: -3936299568790287054, guid: adfb39f12a648d445932d36f16a0e1b8, type: 3}
+  - {fileID: -3794963808577556294, guid: adfb39f12a648d445932d36f16a0e1b8, type: 3}
+  - {fileID: -644907689628543390, guid: adfb39f12a648d445932d36f16a0e1b8, type: 3}
+  - {fileID: -7042083784532311337, guid: adfb39f12a648d445932d36f16a0e1b8, type: 3}
+  - {fileID: -1472805317032622432, guid: adfb39f12a648d445932d36f16a0e1b8, type: 3}
+  - {fileID: 9200684579038198016, guid: adfb39f12a648d445932d36f16a0e1b8, type: 3}
+  - {fileID: -2653516416582790740, guid: adfb39f12a648d445932d36f16a0e1b8, type: 3}
+  - {fileID: -6229734947740245026, guid: adfb39f12a648d445932d36f16a0e1b8, type: 3}
+  - {fileID: 3832655775228933478, guid: adfb39f12a648d445932d36f16a0e1b8, type: 3}
+  - {fileID: 1463587863516260736, guid: adfb39f12a648d445932d36f16a0e1b8, type: 3}
+  - {fileID: -6620039245716666339, guid: adfb39f12a648d445932d36f16a0e1b8, type: 3}
+  - {fileID: 2643975358488012907, guid: adfb39f12a648d445932d36f16a0e1b8, type: 3}
+  - {fileID: -3200523110312328444, guid: adfb39f12a648d445932d36f16a0e1b8, type: 3}
+  - {fileID: -8742951011141175418, guid: adfb39f12a648d445932d36f16a0e1b8, type: 3}
+  - {fileID: -2286418600118850912, guid: adfb39f12a648d445932d36f16a0e1b8, type: 3}
+  - {fileID: -3592227050037319125, guid: adfb39f12a648d445932d36f16a0e1b8, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Demo tilemap_14
+  - Demo tilemap_15
+  - Demo tilemap_16
+  - Demo tilemap_17
+  - Demo tilemap_10
+  - Demo tilemap_11
+  - Demo tilemap_12
+  - Demo tilemap_13
+  - Demo tilemap_18
+  - Demo tilemap_19
+  - Demo tilemap_30
+  - Demo tilemap_29
+  - Demo tilemap_28
+  - Demo tilemap_25
+  - Demo tilemap_24
+  - Demo tilemap_27
+  - Demo tilemap_26
+  - Demo tilemap_21
+  - Demo tilemap_20
+  - Demo tilemap_23
+  - Demo tilemap_22
+  - Demo tilemap_9
+  - Demo tilemap_8
+  - Demo tilemap_5
+  - Demo tilemap_4
+  - Demo tilemap_7
+  - Demo tilemap_6
+  - Demo tilemap_1
+  - Demo tilemap_0
+  - Demo tilemap_3
+  - Demo tilemap_2
+  m_Tag: DemoTilesetAtlas
+  m_IsVariant: 0
