@@ -10,7 +10,7 @@ public class DialogueManager : Singleton<DialogueManager>
     public bool started;
     public int isReady = 0;
 
-    private int waitTime = 100;
+    private int waitTime = 10;
 
 
     public Text nameText;
